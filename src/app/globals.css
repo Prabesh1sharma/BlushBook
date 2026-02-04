@@ -157,6 +157,15 @@ body {
   z-index: 0;
 }
 
+/* Floating Elements for Valentine Days */
+.floating-element {
+  position: absolute;
+  opacity: 0.4;
+  pointer-events: none;
+  z-index: 0;
+  animation: float 4s ease-in-out infinite;
+}
+
 /* Modal Overlay */
 .modal-overlay {
   position: fixed;
