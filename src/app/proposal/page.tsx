@@ -183,17 +183,44 @@ export default function ProposalPage() {
                     </p>
                 </div>
 
-                {/* Bottom Quote */}
-                <div className="text-center mt-12 animate-fadeIn">
-                    <p
-                        className="text-xl text-pink-600 italic"
-                        style={{ fontFamily: "'Dancing Script', cursive" }}
-                    >
-                        &ldquo;Every love story is beautiful, but ours will be my favorite.&rdquo;
-                    </p>
-                    <div className="mt-4 text-3xl">💕 💖 💕</div>
+                {/* Beautiful Quotes Section */}
+                <div className="text-center mt-12 space-y-8 animate-fadeIn">
+                    <div className="glass-card p-8 max-w-2xl mx-auto">
+                        <div className="text-4xl mb-4 opacity-30">❝</div>
+                        <p
+                            className="text-2xl md:text-3xl text-pink-700 italic leading-relaxed"
+                            style={{ fontFamily: "'Dancing Script', cursive" }}
+                        >
+                            Every love story is beautiful, but ours will be my favorite.
+                        </p>
+                        <div className="text-4xl mt-4 opacity-30 text-right">❞</div>
+                    </div>
+
+                    <div className="glass-card p-8 max-w-2xl mx-auto">
+                        <div className="text-4xl mb-4 opacity-30">❝</div>
+                        <p
+                            className="text-2xl md:text-3xl text-pink-700 italic leading-relaxed"
+                            style={{ fontFamily: "'Dancing Script', cursive" }}
+                        >
+                            I choose you. And I'll choose you over and over and over. Without pause, without a doubt, in a heartbeat. I'll keep choosing you.
+                        </p>
+                        <div className="text-4xl mt-4 opacity-30 text-right">❞</div>
+                    </div>
+
+                    <div className="flex items-center justify-center gap-4 text-4xl mt-6">
+                        💕 <span className="text-pink-400">•</span> 💖 <span className="text-pink-400">•</span> 💕
+                    </div>
                 </div>
             </div>
+
+            {/* Attribution Footer */}
+            <footer className="text-center py-6 mt-12">
+                <div className="glass-card inline-block px-8 py-4">
+                    <p className="text-sm text-pink-600/80">
+                        Made with 💕 for someone special
+                    </p>
+                </div>
+            </footer>
 
             {/* Modal for No button */}
             {showModal && (

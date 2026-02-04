@@ -68,14 +68,16 @@ export default function LovePage() {
                 </div>
 
                 {/* Opening Quote */}
-                <div className="glass-card p-8 text-center mb-16 animate-fadeIn" style={{ animationDelay: '0.2s' }}>
+                <div className="glass-card p-10 md:p-12 text-center mb-16 animate-fadeIn transform hover:scale-105 transition-transform duration-300" style={{ animationDelay: '0.2s' }}>
+                    <div className="text-5xl mb-6 opacity-30">❝</div>
                     <p
-                        className="text-2xl md:text-3xl text-pink-700 italic"
+                        className="text-3xl md:text-4xl text-pink-700 italic leading-relaxed"
                         style={{ fontFamily: "'Dancing Script', cursive" }}
                     >
-                        &ldquo;Love is composed of a single soul inhabiting two bodies.&rdquo;
+                        Love is composed of a single soul inhabiting two bodies.
                     </p>
-                    <p className="mt-4 text-pink-500 font-medium">— Aristotle</p>
+                    <div className="text-5xl mt-6 opacity-30 text-right">❞</div>
+                    <p className="mt-6 text-pink-500 font-medium text-lg">— Aristotle</p>
                 </div>
 
                 {/* Love Aspects Grid */}
@@ -151,17 +153,58 @@ export default function LovePage() {
                     </Link>
                 </div>
 
-                {/* Closing Quote */}
-                <div className="text-center mt-16 animate-fadeIn">
-                    <p
-                        className="text-xl text-pink-500 italic"
-                        style={{ fontFamily: "'Dancing Script', cursive" }}
-                    >
-                        &ldquo;The best thing to hold onto in life is each other.&rdquo;
-                    </p>
-                    <p className="mt-2 text-pink-400">— Audrey Hepburn 💕</p>
+                {/* Additional Beautiful Quotes */}
+                <div className="space-y-8 mt-16">
+                    <div className="glass-card p-10 text-center animate-fadeIn transform hover:scale-105 transition-transform duration-300">
+                        <div className="text-4xl mb-4 opacity-30">❝</div>
+                        <p
+                            className="text-2xl md:text-3xl text-pink-700 italic leading-relaxed"
+                            style={{ fontFamily: "'Dancing Script', cursive" }}
+                        >
+                            The best thing to hold onto in life is each other.
+                        </p>
+                        <div className="text-4xl mt-4 opacity-30 text-right">❞</div>
+                        <p className="mt-4 text-pink-500 font-medium">— Audrey Hepburn 💕</p>
+                    </div>
+
+                    <div className="glass-card p-10 text-center animate-fadeIn transform hover:scale-105 transition-transform duration-300">
+                        <div className="text-4xl mb-4 opacity-30">❝</div>
+                        <p
+                            className="text-2xl md:text-3xl text-pink-700 italic leading-relaxed"
+                            style={{ fontFamily: "'Dancing Script', cursive" }}
+                        >
+                            Love recognizes no barriers. It jumps hurdles, leaps fences, penetrates walls to arrive at its destination full of hope.
+                        </p>
+                        <div className="text-4xl mt-4 opacity-30 text-right">❞</div>
+                        <p className="mt-4 text-pink-500 font-medium">— Maya Angelou 💖</p>
+                    </div>
+
+                    <div className="glass-card p-10 text-center animate-fadeIn transform hover:scale-105 transition-transform duration-300">
+                        <div className="text-4xl mb-4 opacity-30">❝</div>
+                        <p
+                            className="text-2xl md:text-3xl text-pink-700 italic leading-relaxed"
+                            style={{ fontFamily: "'Dancing Script', cursive" }}
+                        >
+                            Being deeply loved by someone gives you strength, while loving someone deeply gives you courage.
+                        </p>
+                        <div className="text-4xl mt-4 opacity-30 text-right">❞</div>
+                        <p className="mt-4 text-pink-500 font-medium">— Lao Tzu �</p>
+                    </div>
+
+                    <div className="flex items-center justify-center gap-4 text-4xl mt-8">
+                        �💕 <span className="text-pink-400">•</span> 💖 <span className="text-pink-400">•</span> 💗 <span className="text-pink-400">•</span> 💕
+                    </div>
                 </div>
             </div>
+
+            {/* Attribution Footer */}
+            <footer className="text-center py-6 mt-12">
+                <div className="glass-card inline-block px-8 py-4">
+                    <p className="text-sm text-pink-600/80">
+                        Made with 💕 for someone special
+                    </p>
+                </div>
+            </footer>
         </div>
     );
 }
