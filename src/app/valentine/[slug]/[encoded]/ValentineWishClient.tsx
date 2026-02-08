@@ -41,23 +41,5 @@ export default function ValentineWishClient({
       return <KissDayWish day={day} names={names} quotes={quotes} />;
     case "valentines-day":
       return <ValentinesDayWish day={day} names={names} quotes={quotes} />;
-    default:
-      // Fallback to a simple display (should never happen)
-      return (
-        <div className="min-h-screen flex items-center justify-center">
-          <div className="glass-card p-10 text-center">
-            <div className="text-6xl mb-4">{day.emoji}</div>
-            <h1 className="text-4xl font-bold text-pink-600 mb-4" style={{ fontFamily: "'Dancing Script', cursive" }}>
-              Happy {day.name}!
-            </h1>
-            <p className="text-xl text-pink-700">
-              Dear {names.to}, wishing you a wonderful {day.name}!
-            </p>
-            <p className="text-lg text-pink-600 mt-4">
-              With love, {names.from} 💕
-            </p>
-          </div>
-        </div>
-      );
   }
 }
